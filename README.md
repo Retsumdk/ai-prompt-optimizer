@@ -1,5 +1,8 @@
 # AI Prompt Optimizer
 
+[![Build](https://github.com/Retsumdk/ai-prompt-optimizer/workflows/CI/badge.svg)](https://github.com/Retsumdk/ai-prompt-optimizer/actions)
+
+
 ## Description
 
 Analyze and optimize AI prompts for better results using pattern matching and best practices. This tool analyzes prompts for common issues and provides actionable improvement recommendations.
