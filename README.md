@@ -1,64 +1,58 @@
 # AI Prompt Optimizer
 
 [![Build](https://github.com/Retsumdk/ai-prompt-optimizer/workflows/CI/badge.svg)](https://github.com/Retsumdk/ai-prompt-optimizer/actions)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Node.js](https://img.shields.io/badge/Node.js-20.x-339933.svg)](https://nodejs.org/)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-v1.0.0-orange.svg)](https://github.com/Retsumdk/ai-prompt-optimizer/releases/tag/v1.0.0)
 
-
-## Description
-
-Analyze and optimize AI prompts for better results using pattern matching and best practices. This tool analyzes prompts for common issues and provides actionable improvement recommendations.
+Analyze and optimize AI prompts for better results using pattern matching and best practices.
 
 ## Features
 
-- **Prompt Analysis** - identify strength, vagueness, and clarity
-- **Recommendations** - provide actionable improvements
-- **Scoring** - rate prompts on multiple dimensions
-- **Best Practices Database** - built-in prompt templates
+- **Prompt Analysis**: Identify strength, vagueness, and clarity issues
+- **Recommendations**: Provide actionable improvements based on best practices
+- **Scoring**: Rate prompts on multiple dimensions (clarity, specificity, structure)
+- **Best Practices Database**: Built-in prompt templates and optimization patterns
 
 ## Installation
 
 ```bash
 npm install -g ai-prompt-optimizer
+# or
+npm install ai-prompt-optimizer
 ```
 
 ## Usage
 
 ```bash
 # Analyze a prompt
-ai-prompt-optimizer analyze "description: A great prompt"
+ai-prompt-optimizer analyze "Your prompt here"
 
 # Interactive mode
 ai-prompt-optimizer optimize
+```
 
-# Input:
-Task Name: Blog Post Generator
-Input: The user has given a topic about Prompt Engineering.
+## Example
 
-Output: A 50-word blog post
+```bash
+$ ai-prompt-optimizer analyze "Write a blog post about AI"
 
-# Output:
-Your prompt scored: 80/100
+Prompt scored: 65/100
 
 ## Recommendations:
 1. Add specific output format guidelines
 2. Include tone/style preferences
 3. Define target audience
 4. Add length constraints
+```
 
-## Theoretical Basis
+## 🔗 Related Repos
 
-This tool uses a theoretical basis for prompt optimization:
-
-- **Strength analysis** - how clearly the prompt specifies the task
-- **Complexity scoring** - hierarchical and open-ended questions
-- **Context sanity** - has a shared context or does not need one
-- **Format clarity** - has specified output format
-- **Actionability** - it is clear how the AI should respond
+- [prompt-version-control](https://github.com/Retsumdk/prompt-version-control) — Version control for AI prompts
+- [ai-response-validator](https://github.com/Retsumdk/ai-response-validator) — Validate AI responses
+- [agent-workflow-orchestrator](https://github.com/Retsumdk/agent-workflow-orchestrator) — Orchestrate agent workflows
 
 ## License
 
-MIT License
-
-## Contributing
-
-Welcome to contributions! Please open a PR if you have improvements.
-
+MIT License - see [LICENSE](LICENSE) for details.
