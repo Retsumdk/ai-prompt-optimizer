@@ -32,7 +32,7 @@ const VAGUENESS_PATTERNS = [
   { pattern: /\btry to\b/i, penalty: 5, detail: 'Use direct commands instead of "try to"' },
 ];
 
-function analyzePrompt(prompt: string): AnalysisResult {
+export function analyzePrompt(prompt: string): AnalysisResult {
   const lines = prompt.split('\n').filter(l => l.trim());
   
   let strength = 50;
@@ -169,4 +169,8 @@ function main() {
   program.parse();
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+export { AnalysisResult };
